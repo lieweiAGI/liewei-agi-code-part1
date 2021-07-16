@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<petal width (cm) &le; -0.433<br/>gini = 0.663<br/>samples = 105<br/>value = [39, 36, 30]<br/>class = setosa>, fillcolor="#fefaf6"] ;
+1 [label=<gini = 0.0<br/>samples = 39<br/>value = [39, 0, 0]<br/>class = setosa>, fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<petal width (cm) &le; 0.8<br/>gini = 0.496<br/>samples = 66<br/>value = [0, 36, 30]<br/>class = versicolor>, fillcolor="#defbea"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label=<petal length (cm) &le; 0.856<br/>gini = 0.145<br/>samples = 38<br/>value = [0, 35, 3]<br/>class = versicolor>, fillcolor="#4ae78c"] ;
+2 -> 3 ;
+4 [label=<sepal length (cm) &le; -1.003<br/>gini = 0.056<br/>samples = 35<br/>value = [0, 34, 1]<br/>class = versicolor>, fillcolor="#3fe685"] ;
+3 -> 4 ;
+5 [label=<sepal width (cm) &le; -1.34<br/>gini = 0.5<br/>samples = 2<br/>value = [0, 1, 1]<br/>class = versicolor>, fillcolor="#ffffff"] ;
+4 -> 5 ;
+6 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 1, 0]<br/>class = versicolor>, fillcolor="#39e581"] ;
+5 -> 6 ;
+7 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 0, 1]<br/>class = virginica>, fillcolor="#8139e5"] ;
+5 -> 7 ;
+8 [label=<gini = 0.0<br/>samples = 33<br/>value = [0, 33, 0]<br/>class = versicolor>, fillcolor="#39e581"] ;
+4 -> 8 ;
+9 [label=<petal width (cm) &le; 0.541<br/>gini = 0.444<br/>samples = 3<br/>value = [0, 1, 2]<br/>class = virginica>, fillcolor="#c09cf2"] ;
+3 -> 9 ;
+10 [label=<gini = 0.0<br/>samples = 2<br/>value = [0, 0, 2]<br/>class = virginica>, fillcolor="#8139e5"] ;
+9 -> 10 ;
+11 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 1, 0]<br/>class = versicolor>, fillcolor="#39e581"] ;
+9 -> 11 ;
+12 [label=<petal length (cm) &le; 0.742<br/>gini = 0.069<br/>samples = 28<br/>value = [0, 1, 27]<br/>class = virginica>, fillcolor="#8640e6"] ;
+2 -> 12 ;
+13 [label=<sepal length (cm) &le; 0.406<br/>gini = 0.5<br/>samples = 2<br/>value = [0, 1, 1]<br/>class = versicolor>, fillcolor="#ffffff"] ;
+12 -> 13 ;
+14 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 1, 0]<br/>class = versicolor>, fillcolor="#39e581"] ;
+13 -> 14 ;
+15 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 0, 1]<br/>class = virginica>, fillcolor="#8139e5"] ;
+13 -> 15 ;
+16 [label=<gini = 0.0<br/>samples = 26<br/>value = [0, 0, 26]<br/>class = virginica>, fillcolor="#8139e5"] ;
+12 -> 16 ;
+}
